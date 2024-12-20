@@ -1,9 +1,4 @@
-﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
--- Link to schema: https://app.quickdatabasediagrams.com/#/d/LNPjKf
--- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
-
-
-CREATE TABLE "campaign" (
+﻿CREATE TABLE "campaign" (
     "cf_id" int   NOT NULL,
     "contact_id" int   NOT NULL,
     "company_name" varchar   NOT NULL,
@@ -14,8 +9,8 @@ CREATE TABLE "campaign" (
     "backers_count" int   NOT NULL,
     "country" varchar   NOT NULL,
     "currency" varchar   NOT NULL,
-    "launched_date" int   NOT NULL,
-    "end_date" int   NOT NULL,
+    "launched_date" timestamp   NOT NULL,
+    "end_date" timestamp  NOT NULL,
     "category_id" varchar   NOT NULL,
     "subcategory_id" varchar   NOT NULL,
     CONSTRAINT "pk_campaign" PRIMARY KEY (
